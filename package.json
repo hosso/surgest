@@ -1,0 +1,35 @@
+{
+  "name": "surgest",
+  "version": "0.1.0",
+  "description": "Deploy password protected websites using Surge",
+  "author": "E. Hosso",
+  "license": "MIT",
+  "repository": "hosso/surgest",
+  "keywords": [
+    "surge"
+  ],
+  "bin": {
+    "surgest": "./bin/cli.js"
+  },
+  "main": "./lib/index.js",
+  "files": [
+    "./bin",
+    "./lib"
+  ],
+  "scripts": {
+    "start": "./bin/cli.js",
+    "format": "prettier --write {bin,lib,test}/**/*.js *.md",
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clipboardy": "^1.2.3",
+    "commander": "^2.19.0",
+    "password-generator": "^2.2.0",
+    "surge": "^0.20.1"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2"
+  }
+}
